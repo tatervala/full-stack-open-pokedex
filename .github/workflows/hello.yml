@@ -1,8 +1,19 @@
 name: hello-world
 on: push
 jobs:
-  my-job:
+  hello:
     runs-on: ubuntu-latest
     steps:
       - name: Say hello
         run: echo "Hello World!"
+  date:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Now is
+        run: date
+  directory:
+    runs-on: ubuntu-latest
+    steps:
+      - name: current directory
+        run: ls -l  
+        
