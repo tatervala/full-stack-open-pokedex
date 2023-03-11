@@ -1,18 +1,20 @@
-# fly.toml file generated for throbbing-bush-2893 on 2023-03-11T18:17:54+02:00
+# fly.toml file generated for hidden-cloud-2375 on 2023-03-11T18:40:54+02:00
 
-app = "throbbing-bush-2893"
+app = "hidden-cloud-2375"
 kill_signal = "SIGINT"
 kill_timeout = 5
 primary_region = "arn"
 processes = []
 
-[env]
-  PORT = "8080"
 [deploy]
   release_command = "npm run build"
 
 [processes]
   app = "node app.js"
+  
+[env]
+  PORT = "8080"
+
 [experimental]
   auto_rollback = true
 
